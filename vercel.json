@@ -1,0 +1,4 @@
+{
+  "buildCommand": "mkdir -p public && npx esbuild index.tsx --bundle --outfile=public/index.js --format=esm --jsx=automatic --external:react --external:\"react-dom/*\" --external:@google/genai && cp index.html public/ && cp metadata.json public/",
+  "outputDirectory": "public"
+}
